@@ -22,12 +22,24 @@ function check(inputData, Todo) {
 function show(Todo) {
     output.innerHTML = ''
     for (let i = 0; i < Todo.length; i++) {
-        output.innerHTML += `
-        <div class="${Todo[i].Complete ? 'done' : ''}"><span>${Todo[i].Name}</span>
-        <button onclick="done('${i}')">Complete</button>
-        <button onclick="deltask('${i}')">Delete</button>
-        </div>
-        `
+        const Div = document.createElement('div');
+       Div.setAttribute("class", Todo[i].Complete ? 'done' : '')
+
+        const Text = document.createElement('div')
+        Text.textContent = Todo[i].Name
+        Div.appendChild(Text)
+
+        const compBtn = document.createElement('button')
+        compBtn.textContent = 'Complete'
+        compBtn.setAttribute("onclick",`done(${i})`)
+        Div.appendChild(compBtn)
+
+        const delBtn = document.createElement('button')
+        delBtn.textContent = 'Delete'
+        delBtn.setAttribute("onclick",`deltask(${i})`)
+        Div.appendChild(delBtn)
+
+        output.appendChild(Div)
     }
 }
 

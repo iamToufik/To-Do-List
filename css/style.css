@@ -44,14 +44,33 @@ input {
     padding: 5px;
     border-radius: 15px;
     margin-bottom: 5px;
+    display: flex;
 }
 
 #output div span {
     margin: 0 5px;
 }
 
+#output div div {
+    background-color: transparent;
+    overflow-x:auto;
+    height: 25px;
+}
+
+#output div div:nth-child(1) {
+    width: auto;
+}
+
+/* #output div div::-webkit-scrollbar {
+    display:none;
+} */
+
 #output .done {
-    background-color: #b1fee1;
+    background-color: #eee0e0;
+}
+
+#output .done div:nth-child(1) {
+    text-decoration: line-through;
 }
 
 .done span {
