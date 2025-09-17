@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header {
+    width: 70%;
+    height: auto;
+    background-color: #6accf3;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 30%;
+    height: 40px;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+#addBtn {
+    width: 10%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+#output {
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    background-color: #71d1f7;
+    padding: 10px;
+    overflow: scroll;
+}
+
+#output::-webkit-scrollbar {
+    display: none;
+}
+
+#output div {
+    width: 70%;
+    background-color: #e5fcd9;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+#output div span {
+    margin: 0 5px;
+}
+
+#output .done {
+    background-color: #b1fee1;
+}
+
+.done span {
+    text-decoration: line-through;
+    color: grey;
+}
