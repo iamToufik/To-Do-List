@@ -61,10 +61,6 @@ input {
     width: auto;
 }
 
-/* #output div div::-webkit-scrollbar {
-    display:none;
-} */
-
 #output .done {
     background-color: #eee0e0;
 }
