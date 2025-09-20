@@ -57,10 +57,6 @@ input {
     height: 25px;
 }
 
-#output div div:nth-child(1) {
-    width: auto;
-}
-
 #output .done {
     background-color: #eee0e0;
 }
